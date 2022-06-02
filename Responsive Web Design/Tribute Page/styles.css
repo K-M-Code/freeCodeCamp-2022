@@ -1,33 +1,76 @@
+/* Section Styling */
+
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Robot;
+    font-family: 'Montserrat', Robot;
     font-size: 16px;
+    font-weight: 400;
 }
 
 body {
-    background-color: grey;
+    background-color: #eee;
     color: #333;
+    margin: 0;
 }
 
 .header {
     text-align: center;
+    padding: 10px;
 }
+
+#img-div {
+    margin: 0 auto;
+    width: 95%;
+    padding: 10px;
+    background-color: white;
+}
+
+#tribute-info {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Text Styling */
 
 h1 {
     font-size: 2rem;
+    font-weight: 800;
 }
 
-.imagebox img {
+#headline,
+.bold {
+    font-weight: 700;
+}
+
+/* Element Styling */
+
+#headline {
+    text-align: center;
+}
+
+#img-div img {
+    display: block;
     margin: 0 auto;
-    width: 90%;
-    min-width: 600px;
-    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
 }
 
-.imagebox {
-    width: 90%;
-    display: flex;
+#img-div figcaption {
+    max-width: 750px;
     margin: 0 auto;
     padding: 10px;
-    background-color: white;
+}
+
+#img-caption {
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+}
+
+blockquote {
+    padding: 10px;
 }
