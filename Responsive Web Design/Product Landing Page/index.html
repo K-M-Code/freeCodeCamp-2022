@@ -7,46 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 </head>
 
 <body>
     <header id="header">
-        <h1></h1>
-        <img src="https://kunalmenon.com/cv/assets/images/logoSmallLight.svg" alt="" id="header-img">
+        <div class="logo">
+            <img src="https://kunalmenon.com/cv/assets/images/logoSmallLight.svg" alt="" id="header-img">
+        </div>
         <nav id="nav-bar">
             <ul>
-                <li><a href="#Home" class="nav-link">Home</a></li>
-                <li><a href="#About" class="nav-link">About</a></li>
-                <li><a href="#Contact" class="nav-link">Contact</a></li>
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="#Home" class="nav-link">Home</a></li>
+                    <li><a href="#About" class="nav-link">About</a></li>
+                    <li><a href="#Contact" class="nav-link">Contact</a></li>
+                </div>
             </ul>
         </nav>
     </header>
     <section id="Home">
         <div id="hero-banner">
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=100"
-                alt="">
+            <div class="header-text">
+                <h1>Smart Watch</h1>
+                <div class="header-paragraph">
+                    <p>Our Sleek and Elegant Smartwatch</p>
+                </div>
+            </div>
+            <div class="header-bg">
+
+            </div>
+            <!-- <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=100"
+                alt=""> -->
         </div>
     </section>
+
+    <section class="break"></section>
+
     <section id="About">
-        <iframe id="video" src="https://www.youtube.com/embed/SGDHxCUlhlU?autoplay=0&controls=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SGDHxCUlhlU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
+        <div class="video">
+            <iframe id="video" src="https://www.youtube.com/embed/SGDHxCUlhlU?autoplay=0&controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="text">
+            <h2>
+                Our largest display yet.
+                <br>
+                Over 50% more screen area than Series 3.</h2>
+            <div class="paragraph">
+                <p><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias rerum aliquid facilis, hic
+                    consequatur sunt dolorum a tempora pariatur voluptate minima possimus doloremque voluptatem rem
+                    consectetur nostrum inventore, quisquam est?<br><br>
+                    Beatae enim voluptas reiciendis rerum omnis commodi iste excepturi quas, aliquid aspernatur neque
+                    minima, consectetur, cumque illo! Illum, error facilis sint tempore eum eius voluptatum corporis
+                    distinctio asperiores veniam reprehenderit?<br><br>
+                    Odio deserunt accusamus, blanditiis molestiae fugiat, cupiditate perspiciatis magni accusantium
+                    tempore recusandae consequatur aliquid, hic natus excepturi rem vel cumque corporis corrupti veniam.
+                    Quos facere eveniet molestias? Corrupti, maxime numquam?
+                </p>
+            </div>
     </section>
+
+    <section class="break"></section>
+
     <section id="Contact">
+        <h2>Pre-Order S.Watch Now</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-            <input id="submit" type="submit" value="Submit">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input id="submit" type="submit" value="Pre-Order Now">
+            </div>
         </form>
 
+    </section>
+
+
+    <section class="break"></section>
+
+    <section class="footer">
+        <div class="footer-text">
+            <p>&copy; 2022 Kunal Menon</p>
+        </div>
     </section>
 </body>
 
