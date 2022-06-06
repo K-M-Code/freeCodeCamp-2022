@@ -1,3 +1,7 @@
+:root {
+    --header-height: 70px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +15,9 @@
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    height: var(--header-height);
+    position: fixed;
+    width: 100%;
 }
 
 #header ul {
@@ -20,12 +27,19 @@
     justify-content: space-evenly;
 }
 
-.nav-link{
+.nav-link {
     display: inline-block;
     margin: 0 1rem;
     align-items: center;
 }
 
 #header-img {
-    width: 100px;
+    width: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    margin: 0;
+    padding: 0;
 }
